@@ -1,0 +1,209 @@
+@import "../../../main.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.intel_service {
+  padding: 70px 0px 70px 0px;
+  background-color: #fff;
+
+  .no_pad {
+    .intel_image {
+      height: 33rem !important;
+      img {
+        width: 100%;
+    height: 33rem;
+    object-fit: cover;
+      }
+    }
+  }
+
+  .intel_cnt {
+    padding: 0px 0px 0px 25px;
+
+    .title {
+      font-family: Inter, sans-serif;
+
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-align: start;
+      background-image: linear-gradient(
+        to right top,
+        #0e30ed,
+        #004ff1,
+        #0065ef,
+        #0078e9,
+        #2788e0
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .heading {
+     
+      font-family: Inter, sans-serif;
+    font-size: 23px;
+    color: #222;
+   
+   
+    position: relative;
+        margin-top: 14px;
+    text-align: start;
+    margin-bottom: 30px;
+    line-height: 28px;
+}
+.three_areas{
+  line-height: 0;
+}
+
+// .heading::before {
+//     position: absolute;
+//     content: "";
+//     height: 2px;
+//     width: 51px;
+//     bottom: -7px;
+//     left: 9%;
+//     transform: translateX(-50%);
+//     background: #0513f1;
+// }
+
+// .heading::after {
+//     position: absolute;
+//     content: "";
+//     height: 9px;
+//     width: 9px;
+//     border-radius: 50%;
+//     background: #fff;
+//     border: 2px solid #0513f1;
+//     box-shadow: 0 0 0 5px #fff;
+//     bottom: -10px;
+//     left: 2%;
+//     transform: translateX(-50%);
+// }
+    .cnt {
+      color: #333;
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    margin: 5px 0;
+    }
+
+    .three_areas {
+      margin-top: 10px;
+
+      .one,
+      .two,
+      .three {
+        padding: 3px;
+        border-left: 4px solid transparent;
+        transition: border-left 0.3s ease;
+        font-family: Inter, sans-serif;
+
+        .titles {
+          color: #333;
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    margin-bottom: 18px;
+          text-align: start;
+        }
+
+        .cnts {
+          font-family: Inter, sans-serif;
+          font-size: 13px;
+          color: #999999;
+
+          text-align: start;
+
+          margin-top: 5px;
+        }
+      }
+
+      .one {
+        border-left-color: #007bff;
+      }
+
+      &:hover {
+        .one {
+          border-left-color: transparent;
+        }
+      }
+
+      .one:hover {
+        border-left-color: #007bff;
+      }
+
+      .two:hover,
+      .three:hover {
+        border-left-color: #007bff;
+      }
+    }
+
+    .learn {
+   
+
+
+      a {
+        
+        .arrow_right {
+          svg {
+            color: #fff;
+            font-size: 13px;
+            margin-bottom: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+.ser-learn3 {
+  text-decoration: none;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 30px;
+  width: 25%;
+  padding: 20px 10px;
+  
+  background: linear-gradient(90deg,
+          rgba(5, 17, 242, 1) 0%,
+          rgba(6, 21, 241, 1) 30%,
+          rgba(39, 136, 224, 1) 63%,
+          rgba(49, 173, 219, 1) 87%,
+          rgba(54, 187, 217, 1) 100%);
+  font-size: 13px;
+  white-space: nowrap;
+}
+.btn-primary3 {
+   
+  
+  padding: 8px 25px; /* Fixed padding */
+  color: white; /* Text color */
+  line-height: 1.5; /* Consistent line height */
+  min-height: 40px; /* Minimum height */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+.btn-primary3:hover{
+  background: #fff;
+  color: #0059ff;
+ 
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .intel_service .intel_cnt .heading {
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  .intel_service .intel_cnt .learn {
+    margin-top: 5px;
+    height: auto;
+    padding: 10px 20px;
+    width: 26%;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+.highlight {
+
+  color: #007bff; 
+  
+}
+
+.banner_bg {
+  background-image: url("../../assests/banner.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .star-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    .height_adjust {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 600px;
+      .title_one,
+      .title_two {
+        font-family: Inter, sans-serif;
+        font-size: 40px;
+        color: #fff;
+        line-height: 40px;
+        .blue {
+          background-color: #3367d1;
+          color: #fff;
+        }
+
+        .color_grad {
+          background-image: linear-gradient(
+            to right top,
+            #0e30ed,
+            #004ff1,
+            #0065ef,
+            #0078e9,
+            #2788e0
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .sub_title,
+      .sub_title_one {
+       
+          font-family: Inter, sans-serif;
+          font-size: 24px;
+          color: #fff;
+          line-height: 40px;
+      
+    
+      }
+      .sub_title_one {
+        margin-bottom: 20px;
+      }
+      .sub_title {
+        margin-top: 20px;
+      }
+      .two_buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    
+        a {
+            text-decoration: none;
+            text-align: center;
+    
+            .service {
+                border: none;
+                border-radius: 30px;
+                padding: 10px 20px;
+                width: 100%;
+                background: linear-gradient(
+                    90deg,
+                    rgba(5, 17, 242, 1) 0%,
+                    rgba(6, 21, 241, 1) 30%,
+                    rgba(39, 136, 224, 1) 63%,
+                    rgba(49, 173, 219, 1) 87%,
+                    rgba(54, 187, 217, 1) 100%
+                );
+                color: #fff;
+                font-family: "inter", sans-serif;
+                font-size: 16px;
+              margin-top: 20px;
+    
+                &:hover {
+                    background: #fff; /* Change background on hover */
+                    color: #0059ff; /* Change text color on hover */
+                   
+                }
+            }
+    
+            .clients {
+                border: none;
+                border-radius: 30px;
+                padding: 10px 20px;
+                width: 100%;
+                background-color: #fff;
+                color: #000;
+                font-family: "Poppins", sans-serif;
+                font-size: 13px;
+                margin-top:20px;
+               
+    
+                &:hover {
+                 
+                    color: #0059ff; /* Change text color on hover */
+                }
+            }
+        }
+    }
+    
+    }
+  }
+}
+
+.typing-animation {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  // border-right: 3px solid #fff;
+  width: 0;
+  animation: typing 3.5s steps(40) 1s forwards, blink 0.75s step-end infinite;
+  background-color: transparent !important; 
+}
+
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.8;
+  pointer-events: none;
+  animation: star-move linear infinite;
+}
+
+@keyframes star-move {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(100vw) translateY(100vh);
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .banner_bg .star-container .height_adjust .sub_title_one {
+    margin-bottom: 20px;
+  }
+  .banner_bg .star-container .height_adjust .title_one,
+  .banner_bg .star-container .height_adjust .title_two {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .banner_bg .star-container .height_adjust .two_buttons a .service {
+    font-size: 12px;
+  }
+  .banner_bg .star-container .height_adjust .two_buttons a .clients {
+    font-size: 12px;
+  }
+  .banner_bg .star-container .height_adjust .two_buttons {
+    gap: 15px;
+  }
+  .banner_bg .star-container .height_adjust .two_buttons a .service {
+   
+    font-size: 20px;
+    
+}
+
+}

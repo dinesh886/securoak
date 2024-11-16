@@ -1,0 +1,566 @@
+
+.identity-image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    .identity-page-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        filter: brightness(50%); // Apply 50% brightness filter
+        margin-top: 70px;
+    }
+   
+    .overlay-text {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff !important;
+        text-align: center;
+
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 700;
+            font-family: Inter, sans-serif;
+        }
+
+        p {
+            font-size: 1.0rem !important;
+            margin-top: 0.5rem;
+            color: #fff !important; 
+            font-weight: 500;
+        }
+    }
+}
+
+
+.Journey-with-Us{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter, sans-serif;
+}
+.digital-identity-container {
+  font-family: Inter, sans-serif;
+  margin-top: 47px;
+  h3 {
+    font-family: Inter, sans-serif;
+    color: #343a40f8; // Primary color
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    
+    color: #222222e7; // Darker color for headings
+    font-weight: 600;
+    text-align: center; // Center headings
+    font-size: 34px;
+    font-family: Inter, sans-serif;
+    margin-bottom: 30px;
+   
+    
+  }
+
+  p {
+    font-size: 1.1rem; // Slightly larger font for readability
+    text-align: center; // Center paragraph
+    color: #000000e1;
+    font-family: Inter, sans-serif;
+      margin-left: 90px;
+      margin-right: 90px;
+  }
+  
+
+  .journey-section {
+    margin-bottom: 40px; // Space below the journey section
+  }
+ 
+ .potential-lottie {
+    width: 250px;
+    height: 250px;
+    margin-top: 39px;
+}
+  
+  .align-items-center .col-md-6 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  
+  .journey-cards-container {
+    display: flex;
+    flex-direction: column; // Stack cards vertically
+    gap: 20px; // Space between cards
+  }
+
+  .journey-card {
+    position: relative; // Relative positioning for pseudo-element
+    text-align: center;
+    padding: 20px; // Increased padding for aesthetics
+    border: none;
+    border-radius: 20px; // Rounded corners
+    background-color: #fff; // White background
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Soft shadow
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    // Decorative gradient background
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 20px; // Match border radius
+      background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%); // Gradient overlay
+      z-index: -1; // Send it behind the card content
+      opacity: 0.1; // Light opacity for subtle effect
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover {
+      transform: translateY(-10px); // Lift effect
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); // Enhanced shadow
+
+      // Increase gradient opacity on hover
+      &:before {
+        opacity: 0.3; // Increase opacity on hover
+      }
+
+      // Change text color on hover
+      .card-title {
+        color: #007bff; // Highlight color
+      }
+
+      .card-description {
+        color: #007bff; // Highlight color
+      }
+    }
+
+    // Icon container styling
+    .icon-container {
+      display: flex; // Use flexbox for alignment
+      justify-content: center; // Center align icons
+      align-items: center; // Vertically center icons
+      font-size: 50px; // Larger icon size
+      margin-bottom: 15px; // Space below icon
+      color: #007bff; // Change icon color to match brand
+    }
+
+    // Styling for the card title
+    .card-title {
+      font-weight: bold;
+      margin: 10px 0; // Margin for title spacing
+      font-size: 1.25rem; // Title font size
+      color: #333; // Darker title color for contrast
+    }
+
+    // Description styling
+    .card-description {
+      font-size: 0.9rem; // Smaller font size for description
+      color: #666; // Softer color for the description
+      line-height: 1.6; // Line height for readability
+    }
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center; // Center image horizontally
+    align-items: center; // Center image vertically
+
+    .large-image {
+      max-width: 100%; // Make the image responsive
+      border-radius: 8px; // Rounded corners for the image
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Soft shadow for depth
+    }
+  }
+
+  .icon-title .icon {
+    margin-right: 10px;
+    color: #007bff;
+    font-size: 29px;
+    margin-left: 59px;
+    /* margin-top: -3px; */
+}
+
+  .list-group-item {
+    font-size: 17px;
+    font-family: Inter, sans-serif;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #e9ecef; // Change background color on hover
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at normal position */
+  }
+}
+
+.partner-title {
+  font-size: 2.0rem; /* Larger font size */
+  font-weight: 700; /* Bold font weight */
+  text-align: center; /* Center the title */
+  color: transparent; /* Use transparent color for the text */
+  
+  background-clip: text; /* Clip the background to the text */
+  -webkit-background-clip: text; /* Safari support */
+  margin-bottom: 30px; 
+  position: relative; /* Position for before/after elements */
+  animation: fadeInUp 0.6s ease forwards; /* Add animation */
+  opacity: 0; /* Start invisible for animation */
+  margin-bottom: 10px;
+
+  
+}
+
+
+
+.partner-card {
+  position: relative; /* Required for absolute positioning of the gradient overlay */
+  height: 200px; /* Fixed height for uniformity */
+  border: 1px solid #e0e0e0; /* Light border for the card */
+  border-radius: 20px; /* Rounded corners */
+  padding: 20px; /* Inner padding */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Smooth hover effects */
+  background-color: #ffffff; /* Card background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: Inter, sans-serif;
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   border-radius: 19px; // Match border radius
+  //   background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%); // Gradient overlay
+  //   z-index: -1; // Send it behind the card content
+  //   opacity: 0.1; // Light opacity for subtle effect
+  //   transition: opacity 0.3s ease;
+  // }
+
+  &:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  }
+
+  // Increase gradient opacity on hover
+  &:before {
+    opacity: 0.3; // Increase opacity on hover
+  }
+
+  .icon-title {
+    display: flex;
+    align-items: center; /* Vertically center the icon and title */
+    margin-bottom: 15px; /* Space between icon/title and description */
+
+ 
+
+    .title {
+      h5 {
+        font-weight: bold; /* Bold title */
+        color: #333; /* Dark color for title text */
+        margin: 0; /* Remove default margin */
+        line-height: 1.2; /* Adjust line height for better spacing */
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .card-title{
+    margin-bottom: 10px;
+  }
+  .card-para{
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+  }
+  p {
+    color: #000000e0; /* Slightly lighter color for description text */
+    margin: 0; /* Remove default margin */
+    flex-grow: 1; /* Allow description to take up remaining space */
+    text-align: start;
+  }
+}
+.partner-card .icon {
+  font-size: 24px; /* Adjust icon size */
+  color: #007bff;
+}
+
+
+.identity-section-background {
+  background: linear-gradient(135deg, #f5f9fc 0%, #e3f2fd 100%);
+  padding: 60px 20px;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: Inter, sans-serif;
+
+  // Optional: Add a soft pattern or SVG wave overlay
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00b0e6;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+    opacity: 0.05; // Mild texture effect
+    z-index: 0;
+  }
+ 
+  h2, p {
+    z-index: 1;
+    position: relative;
+    color: #003366;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000c9;
+    margin-bottom: 15px;
+    font-family: Inter, sans-serif;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+
+  .identity-offerings-title {
+ 
+  // &:after {
+  //   content: "";
+  //   width: 80px;
+  //   height: 3px;
+  //   background-color: #007bff;
+  //   position: absolute;
+  //   bottom: -10px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
+}
+
+.identity-offerings-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #000000d8;
+}
+
+.identity-offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; // Stack cards on smaller screens
+  }
+}
+
+.identity-offerings-card {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fff; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    
+    // Change text color on hover
+    .card-title {
+      color: #007bff; // Change to a highlight color
+    }
+    .card-description {
+      color: #007bff; // Change to a highlight color
+    }
+  }
+
+  // Add a decorative border or gradient background
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px; // Match border radius
+    background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%); // Gradient overlay
+    z-index: -1; // Send it behind the card content
+    opacity: 0.1; // Light opacity for subtle effect
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover:before {
+    opacity: 0.3; // Increase opacity on hover
+  }
+
+  // Add styles for the icon container
+  .icon-container {
+    display: flex;
+    justify-content: center; // Center align the icon container
+    align-items: center; // Vertically align the icons
+    margin-bottom: 10px; // Space between icon and title
+  }
+  
+  .gif {
+    display: flex; // Use flex to center the icon
+    justify-content: center; // Center the icon
+    align-items: center; // Vertically align the icon
+    width: 100%; // Make sure the div takes full width
+  }
+  // Styling for the card title
+  .card-title {
+    font-weight: bold;
+    margin: 10px 0; // Margin for title spacing
+    font-size: 1.25rem; // Increase title font size
+    color: #333; // Darker title color for contrast
+  }
+
+  // Add a description style
+  .card-description {
+    font-size: 0.9rem; // Smaller font size for description
+    color: #666; // Softer color for the description
+  }
+}
+
+
+
+
+
+.list-icon {
+  color: #007bff; // Icon color
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px); /* Start lower */
+    opacity: 0; /* Start invisible */
+  }
+  100% {
+    transform: translateY(0); /* End at normal position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.potential-title {
+  font-size: 2.0rem; /* Larger font size */
+  font-weight: bold; /* Bold font weight */
+  text-align: center; /* Center the title */
+  color: transparent; /* Use transparent color for the text */
+  
+  background-clip: text; /* Clip the background to the text */
+  -webkit-background-clip: text; /* Safari support */
+  margin-bottom: 20px; /* Space below the title */
+  position: relative; /* Position for underline */
+  animation: slideIn 0.7s ease forwards; /* Add slide-in animation */
+  opacity: 0; /* Start invisible for animation */
+    margin-top: 50PX;
+
+  
+}
+
+
+.gifimage {
+  display: flex;               /* Use flex to center the icon */
+  justify-content: center;     /* Center the icon horizontally */
+  align-items: center;         /* Vertically align the icon */
+  height: 300px;               /* Set a fixed height for proper centering */
+  margin: 0 auto;              /* Center the div itself */
+}
+
+.potential-lottie {
+  max-width: 100%;             /* Ensures responsiveness */
+  height: auto;                /* Maintain aspect ratio */
+}
+
+
+
+
+.potential-card {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 10px;       /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  display: flex; /* Enable flexbox layout */
+}
+
+.potential-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.content-column {
+  flex: 1; /* Make the content column flexible */
+  padding: 1.5rem; /* Padding around content */
+}
+
+.image-column {
+  flex: 1; /* Make the image column flexible */
+  display: flex; /* Center the image */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.big-image {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.list-item {
+  display: flex;
+  align-items: center; /* Align icon and text */
+  padding: 1rem;      /* Padding for list items */
+  border-bottom: 1px solid #f1f1f1; /* Light bottom border */
+}
+
+.list-item:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+
+.list-icon {
+  margin-right: 1rem; /* Space between icon and text */
+  color: #007bff;     /* Icon color */
+  font-size: 1.5rem;  /* Increase icon size */
+}
+
+
+
+.partner-section-bg {
+  background: linear-gradient(135deg, #f5f9fc 0%, #e3f2fd 100%);
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px; // Adjust spacing as needed
+
+  &::before {
+    content: '•';
+    margin-right: 10px; // Adjust this value to align with the text consistently
+    color: #000; // Set bullet color if needed
+  }
+}

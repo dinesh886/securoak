@@ -1,0 +1,68 @@
+.managed-support-services {
+  padding: 64px 0;
+  background-color: #f4f9ff;
+
+  .image-container {
+    text-align: center; // Center the image
+   
+  }
+.heding{
+  color: #000;
+}
+  .large-image {
+    width: 100%; // Make the image responsive
+    height: auto; // Maintain aspect ratio
+    max-width: 600px; // Set a max width if needed
+  }
+
+  .text-content {
+    h2 {
+      font-family: Inter, sans-serif;
+      font-size: 28px;
+   
+      color: #222;
+      margin-bottom: 20px; // Space below the heading
+    }
+
+    p {
+      font-family: Inter, sans-serif;
+    font-size: 17px;
+  
+    color: #333;
+    line-height: 1.6;
+    margin: 15px 0;
+    }
+  }
+
+  .align-items-center {
+    display: flex;
+    align-items: center; // Align items vertically centered
+  }
+}
+.know-more-button {
+         
+  padding: 8px 25px;
+  background: linear-gradient(90deg, rgb(5, 17, 242) 0%, rgb(6, 21, 241) 30%, rgb(39, 136, 224) 63%, rgb(49, 173, 219) 87%, rgb(54, 187, 217) 100%);
+  color: #fff; // Button text color
+  text-decoration: none; // Remove underline
+  border-radius: 30px; // Rounded corners
+  transition: background-color 0.3s;
+  font-size: 13px;
+  gap: 10px;
+
+  .know-more-button i {
+    margin-left: 10px; /* Adjust gap between text and icon */
+  }
+  
+  /* Optional: Add some padding for better button appearance */
+  .know-more-button {
+    padding: 8px 12px; /* Add padding around the button */
+    border: 1px solid #007bff; /* Border for visibility */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+  }
+  
+  .know-more-button:hover {
+    background-color: #e7f0ff; /* Change background on hover */
+  }
+}

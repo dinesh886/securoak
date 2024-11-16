@@ -1,0 +1,133 @@
+// @import "../../../main.scss";
+
+.videosec{
+  padding: 30px 0px;
+  
+}
+.videosec .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background: linear-gradient(90deg,rgb(39, 136, 224) 62%, rgba(6, 19, 242) 0%, rgb(6, 19, 242) 30% );
+  background: linear-gradient(
+    90deg,
+    rgb(5, 17, 242) 0%,
+    rgb(6, 21, 241) 30%,
+    rgb(39, 136, 224) 63%,
+    rgb(49, 173, 219) 87%,
+    rgb(54, 187, 217) 100%
+  );
+border-radius: 10px;
+  
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+  max-width: 1128px;
+  
+  margin: 20px auto; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  padding: 20px;
+ 
+   
+   
+   
+}
+
+.card-content {
+  display: flex;
+  gap: 20px; /* Space between text and video */
+  align-items: center;
+  flex-wrap: wrap; /* Makes it responsive */
+  padding: 0px 20px
+}
+
+.card-text {
+  flex: 1;
+  
+  
+}
+.videosec h2{
+  
+    font-family: Inter, sans-serif;
+    font-size: 34px;
+    line-height: 40px;
+    color: #333;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+
+.card-text h2 {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 46px;
+  line-height: 1.5;
+  color: #fff;
+}
+.card-text p{
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+
+}
+.card-video {
+  flex: 1;
+  max-width: 100%; /* Limits the video width */
+  height: 70%;
+
+}
+.card-video iframe {
+  border-radius: 15px; /* Adjust the radius as needed */
+  overflow: hidden;
+}
+
+.card-section:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  
+}
+/* Button Styling */
+.cta-button {
+  display: inline-block;
+  margin-top: 15px; /* Space below the paragraph */
+  padding: 12px 30px;
+  background:#007bff;
+    margin-left: 160px;
+    border: 1px solid;
+  color: #ffffff;
+ /* Text color */
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+ color:#ffffff;
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+.svgimage{
+  margin-top: -6px;
+}
+@media (min-width: 1024px) {
+  .videosec {
+    padding: 30px 8px;
+
+  }
+  .cta-button {
+   
+    margin-left: 129px;
+   
+}
+.card-text h2 {
+  
+  font-size: 43px;
+  
+}
+}

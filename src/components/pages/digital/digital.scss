@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.session_digital {
+  background-image: url("../../assests/last.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+
+  .digital {
+    padding: 0px;
+
+    .flex_box {
+      height: 650px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+
+      .box {
+        position: relative;
+           width: 92%;
+    height: 421px;
+        padding: 30px 30px 30px 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 15%);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+
+        .title {
+          font-family: Inter, sans-serif;
+          margin-top: 1rem;
+          font-size: 29px;
+
+          margin-bottom: 10px;
+          font-weight: 500;
+          text-align: start;
+          background-image: linear-gradient(
+            to right top,
+            #0e30ed,
+            #004ff1,
+            #0065ef,
+            #0078e9,
+            #2788e0
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .cnt {
+          font-family: Inter, sans-serif;
+          font-size: 29px;
+          color: #ffffff;
+          line-height: 33px;
+          text-align: start;
+              margin-top: 1px;
+    margin-bottom: 19px;
+          position: relative;
+        }
+
+//         .cnt::before {
+//     position: absolute;
+//     content: "";
+//     height: 2px;
+//     width: 51px;
+//     bottom: -7px;
+//     left: 7%;
+//     transform: translateX(-50%);
+//     background: #0513f1;
+// }
+
+// .cnt::after {
+//     position: absolute;
+//     content: "";
+//     height: 9px;
+//     width: 9px;
+//     border-radius: 50%;
+//     // background: #fff;
+//     border: 2px solid #0513f1;
+//     // box-shadow: 0 0 0 5px #fff;
+//     bottom: -10px;
+//     left: 1%;
+//     transform: translateX(-50%);
+// }
+
+        .desc {
+          font-family: Inter, sans-serif;
+
+          margin-top: 10px;
+          font-size: 15px;
+          color: #ffffff;
+        }
+
+        .learn { 
+          height: 40px;
+          margin-top: 20px;
+          border: none;
+          border-radius: 30px;
+          padding: 10px;
+          width: 23%;
+          background: linear-gradient(
+              90deg,
+              rgba(5, 17, 242, 1) 0%,
+              rgba(6, 21, 241, 1) 30%,
+              rgba(39, 136, 224, 1) 63%,
+              rgba(49, 173, 219, 1) 87%,
+              rgba(54, 187, 217, 1) 100%
+          );
+          color: #fff;
+          font-family: "Poppins", sans-serif;
+          font-size: 13px;
+          transition: background 0.3s ease, color 0.3s ease;
+      
+          a {
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              justify-content: center;
+              color: #fff;
+          }
+      
+          .arrow_right {
+              svg {
+                  color: #fff;
+                  font-size: 13px;
+                  margin-bottom: 3px;
+              }
+          }
+      
+          &:hover {
+              background: #fff;
+              color: #0059ff;
+              border: 2px solid #0059ff;
+      
+              a {
+                  color: #0059ff; // Change link color on hover
+              }
+      
+              .arrow_right {
+                  svg {
+                      color: #0059ff; // Change SVG color on hover
+                  }
+              }
+          }
+      }
+      
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .session_digital .digital .flex_box .box .cnt {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  .session_digital .digital .flex_box .box .learn {
+    margin-top: 20px;
+    height: auto;
+    padding: 10px 20px;
+    width: 23%;
+    font-size: 12px;
+  }
+  .session_digital .digital .flex_box .box {
+    padding: 30px;
+  }
+}
+
+.custom-list {
+  list-style-type: disc; 
+  color: #fff;
+  padding-left: 1rem; 
+      margin-top: 1rem;
+}
+
+.custom-list li {
+  margin-bottom: 0.5rem; 
+  position: relative;
+}
+
+.custom-list li::marker {
+  color: blue;  
+}

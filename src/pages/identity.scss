@@ -1,0 +1,195 @@
+@import "../main.scss";
+.identity-page {
+    font-weight: 400 !important;
+    font-family: Inter, sans-serif;
+    .identity-image-container {
+        position: relative;
+        text-align: center;
+        color: white;
+        .identity-page-image {
+            width: 100%;
+            height: 400px;
+            filter: brightness(50%); // Apply 50% brightness filter
+            margin-top: 70px;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff !important;
+            text-align: center;
+
+            h1 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                font-family: Inter, sans-serif;
+            }
+
+            p {
+                font-size: 1.0rem;
+                margin-top: 0.5rem;
+                color: #fff !important; 
+            }
+        }
+    }
+
+    .content-section {
+    
+        max-width: 100%;
+        padding: 115px 50px 53px 50px;
+      
+    //     padding-top: 50px;
+    //     padding-bottom: 20px;
+     
+    //   margin-top: 2%;
+     
+    
+     
+        #identity-heading{
+            font-family: Inter, sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            color: #007bff;
+        }
+        .section-header {
+            // margin-bottom: 2rem;
+
+            h3 {  
+                 font-family: Inter, sans-serif;
+                font-weight: 500;
+                font-size: 28px;
+                // word-spacing: 1px;
+                margin-top: -1px;
+                margin-bottom: 20px;
+                color: #222;
+             line-height: 33px;
+                // .blue {
+                //   background-color: #3367d1;
+                //   color: #fff;
+                // }
+
+              
+            }
+
+            p {
+                margin-top: 10px;
+                font-size: 15px;
+                color: #666;
+            }
+        }
+
+        .main-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            margin-left: 50px;
+        }
+     
+
+        p {
+            margin-top: 8px;
+                font-size: 15px;
+                color: #000000bd;
+                text-align: justify;
+        }
+
+        .features-section {
+            background-color: #f7f7f7;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+
+            h4 {
+                font-size: 1.8rem;
+                margin-bottom: 1.2rem;
+                
+            }
+            h2{
+                color: #007bff;
+            }
+            i{
+              
+            }
+          
+
+            .feature-list {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    font-size: 1.1rem;
+                    margin-bottom: 0.8rem;
+
+                    .icon-check {
+                        color: #007bff;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .benefits-section {
+            margin-bottom: 3rem;
+
+            h4 {
+                font-size: 1.8rem;
+                margin-bottom: 1.2rem;
+            }
+
+            .benefit-list {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    font-size: 1.1rem;
+                    margin-bottom: 0.8rem;
+
+                    .icon-check {
+                        color: #007bff;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .benefit-image {
+                width: 100%;
+                margin-top: 1.5rem;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 360px) {
+    .identity-page .identity-image-container .identity-page-image {
+        width: 100%;
+        height: 368px;
+        filter: brightness(50%);
+        margin-top: 70px;
+    }.identity-page .identity-image-container .overlay-text h1 {
+        font-size: 17px;
+        font-weight: 400;
+    }.identity-page .identity-image-container .overlay-text p {
+        font-size: 10px;
+        margin-top: 5px;
+        color: #fff !important;
+    }.identity-page .content-section .section-header h3 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        margin-top: 36px;
+        margin-bottom: 20px;
+        color: #222;
+        line-height: 20px;
+    }.identity-page .content-section p {
+        margin-top: 5px;
+        font-size: 13px;
+        color: #666;
+        text-align: justify;
+    }.about_image img {
+        display: none;
+     
+    }
+   
+}

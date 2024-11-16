@@ -1,0 +1,426 @@
+@import "../../main.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.header_navebar {
+  font-family: Inter, sans-serif;
+  width: 100%;
+  background-color: #fff;
+   
+  position: -webkit-sticky;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+ 
+  // padding: 10px 0;
+  color: #fff;
+  
+  .header_title {
+    position: relative; // Necessary for absolute positioning of dropdowns
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    transform: translateX(-50px);  /* Shift 100px to the left */
+    top: 100%; 
+  
+    background-color: #fff;
+   border: none;
+    z-index: 1000;
+    padding: 5px 0;
+    min-width: 200px;
+  
+  
+  .dropdown-subitem {
+    position: relative; // Ensure inner dropdown positions correctly
+  }
+  
+  .dropdown-menu-inner {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    border-left: 3px solid rgba(0, 0, 255, 0.897);
+    display: none; /* Hide by default */
+    position: absolute; /* Align to the right of the parent item */
+    left: -123%; /* Adjust position to stay within bounds */
+    top: -4px; /* Align top */
+    background-color: #fff;
+   padding-right: 10px;
+    margin: 5px 15px 5px 5px;
+ 
+    z-index: 1000;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 370px; /* Set width for the inner dropdown */
+    white-space: normal; /* Allow text wrapping */
+    word-wrap: break-word; /* Ensure long words wrap inside the box */
+    overflow-wrap: break-word; /* Break long words to the next line */
+    max-width: 600px; /* Set max width for the dropdown */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    
+  }
+  
+  .dropdown-subitem:hover .dropdown-menu-inner {
+    display: flex; /* Show inner dropdown on hover */
+  }
+  
+  .dropdown-item-inner {
+    display: flex; /* Enable flexbox for the item */
+    align-items: center; /* Center the text vertically */
+    padding: 35px 20px; /* Add padding for spacing */
+    margin: 18px 0px;
+  
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    // border-bottom: 0.1px solid rgba(128, 128, 128, 0.808);
+  
+  
+  
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      rgb(5, 17, 242) 0%,
+      rgb(6, 21, 241) 30%,
+      rgb(39, 136, 224) 63%,
+      rgb(49, 173, 219) 87%,
+      rgb(54, 187, 217) 100%
+    );
+   
+    color: #fff !important;
+  }
+}
+.dropdown-subitem:hover .dropdown-menu-inner {
+  display: block;
+}
+
+    .dropdown-item {
+      &:hover {
+        background: linear-gradient(
+          90deg,
+          rgb(5, 17, 242) 0%,
+          rgb(6, 21, 241) 30%,
+          rgb(39, 136, 224) 63%,
+          rgb(49, 173, 219) 87%,
+          rgb(54, 187, 217) 100%
+        );
+        color: #fff !important;
+      }&.show {
+        display: block; // Change this when dropdown is shown
+      }
+      transition: background 0.3s ease;
+      .active {
+        background: linear-gradient(
+            90deg,
+            rgb(5, 17, 242) 0%,
+            rgb(6, 21, 241) 30%,
+            rgb(39, 136, 224) 63%,
+            rgb(49, 173, 219) 87%,
+            rgb(54, 187, 217) 100%
+          );
+          color: #fff !important;
+      }
+    }
+    .nav-item a{
+      color: #000 !important;
+    }
+    
+  &.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+
+    .number {
+      background-color: #f0f0f0;
+    }
+
+    .header_title {
+      .nav-item a {
+        color: #000 !important; // Ensures black text for the about and identity pages
+      }
+      .nav-item a::after,
+      .nav-item a.active::after
+      {
+        background-color: #000 !important; // Black underline for active links
+      }
+    }
+    .dropdown-menu a{ 
+      color: #000 !important;
+    }
+
+   
+    }
+  }
+  .header_navebar a{
+    color: #ffff !important;  
+  }
+  .main_logo {
+    img {
+      width: 90%;
+      height: 40px;
+      object-fit: contain;
+    }
+  }
+
+  .navbar-collapse {
+justify-content: flex-end;
+margin-right: 80px;
+    gap: 20px;
+    
+  }
+
+  .two_buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .header_title {
+     font-family: Inter, sans-serif;
+    font-size: 15px;
+    color: #fff; // Always white
+    position: relative;
+    margin-top: 5px;
+  
+
+
+    &:hover .dropdown-menu {  
+      display: block;
+      color: #fff !important; // Always white
+    }
+
+   
+
+    .header-nav-item a{
+      padding: 0px 20px;
+     
+    }
+
+    .nav-item a{
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      color:  #004ff1,; // Always white
+      position: relative;
+ 
+
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #000;
+        transition: width 0.3s ease-in-out;
+      }
+
+      &:hover::after,
+      &.active::after {
+        width: 50%; // Full width on hover or active
+      }
+    }
+
+    .dropdown-menu a{ 
+      color: #000 !important;
+      &::after{
+display: none;
+      }
+
+    }
+  }
+
+ 
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+   margin-left: 90px;
+    top: 100%;
+    left: 61px;
+    background-color: #fff;
+margin-top: 6px;
+    z-index: 1000;
+    padding: 10px 0;
+    
+   
+   
+
+    .dropdown-item {
+     padding: 10px 20px !important;
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+
+      &:hover {
+        background: linear-gradient(
+          90deg,
+          rgb(5, 17, 242) 0%,
+          rgb(6, 21, 241) 30%,
+          rgb(39, 136, 224) 63%,
+          rgb(49, 173, 219) 87%,
+          rgb(54, 187, 217) 100%
+        );
+        color: #fff !important;
+      }
+
+     
+    }
+
+    .nav-item a{
+      color: #8b8b8b !important;
+      
+    }
+  }
+  .nav-item header-nav-item .dropdown-menu:hover {
+    display: block;
+    color: #fff;
+
+  }
+
+  a {
+    text-decoration: none;
+
+    .quotation {
+      border: none;
+      border-radius: 30px;
+      padding: 10px 18px;
+      width: 100%;
+      background: rgb(5, 17, 242);
+      background: linear-gradient(
+        90deg,
+        rgba(5, 17, 242, 1) 0%,
+        rgba(6, 21, 241, 1) 30%,
+        rgba(39, 136, 224, 1) 63%,
+        rgba(49, 173, 219, 1) 87%,
+        rgba(54, 187, 217, 1) 100%
+      );
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-size: 13px;
+    }
+
+    .number {
+      border: none;
+      border-radius: 30px;
+      padding: 10px 18px;
+      width: 100%;
+      background-color: #fff;
+      color: #000;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+
+      span {
+        svg {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+// Specific styles for header-about and header-identity classes
+.header-about{
+  .header_title {
+    .nav-item a{
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    width: 0; 
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::after,
+  &.active::after {
+    width: 65%; // Full width on hover or active
+  }
+}}
+
+.dropdown-menu a{ 
+ 
+  &::after{
+display: none;
+  }
+
+}
+}
+
+.header-about,
+.header-identity {
+  background-color: #ffffff;
+
+  .header_navebar .header_title .nav-item {
+    color: #fff ; // Always white
+  }
+}
+
+.header-about .nav-link,
+.header-identity .nav-link {
+  color: #004ff1 !important; // Always white
+
+
+}
+
+// Media queries
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .header_navebar .main_logo img {
+    width: 100%;
+    height: 55px;
+  }
+
+  .main_logo {
+    width: 75%;
+  }
+
+  .icon-logo {
+    width: 33%;
+  }
+
+  .header_navebar .header_title .nav-item {
+    padding: 0px;
+  }
+
+  .header_navebar .header_title {
+    font-size: 14px;
+  }
+
+  .header_navebar a .quotation {
+    font-size: 12px;
+  }
+
+  .header_navebar a .number {
+    font-size: 12px;
+  }
+  
+}
+
+
+
+
+.nav-item .icon-rotate {
+  transform: rotate(270deg); /* Default rotation (pointing down) */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.nav-item:hover .icon-rotate {
+  transform: rotate(350deg); /* Rotate to 350 degrees on hover */
+}
+
+
+
+

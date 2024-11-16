@@ -1,0 +1,71 @@
+/* services.scss */
+
+.services-page {
+    .about-image-container {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+  
+    .about-page-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover; /* Ensures the image covers the container */
+    }
+  
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
+      border-radius: 8px;
+    }
+  
+    .about-image {
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover; /* Ensures the image covers the container */
+      }
+    }
+  
+    .abt-desc {
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .desc {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+      .passage {
+        margin-top: 20px;
+        line-height: 1.6;
+      }
+    }
+  
+    .two-blocks {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      .grt, .exp {
+        flex: 1;
+        padding: 10px;
+        .title {
+          font-size: 18px;
+          font-weight: bold;
+        }
+        .desc {
+          font-size: 16px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  

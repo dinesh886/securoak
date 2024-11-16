@@ -1,0 +1,110 @@
+// customerIdentity.scss
+
+.customer-identity-section {
+    padding: 60px 20px;
+    background-color: #f4f9ff; // A lighter, softer background
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: left; // Align text to the left
+  
+      .section-title {
+        font-family: Inter, sans-serif;
+        font-size: 27px;
+        font-weight: 500;
+        color: #222; // Primary color
+        margin-bottom: 20px;
+      }
+  
+      .content-wrapper {
+        display: flex; // Use flexbox for layout
+        align-items: center; // Center items vertically
+        justify-content: space-between; // Space between text and image
+  
+        .text-content {
+          flex: 1; // Allow text to take available space
+          margin-right: 20px; // Space between text and image
+        }
+  
+        .section-image {
+          max-width: 500px; // Set a max width for the image
+          height: 300px;
+          border-radius: 10px; // Rounded corners for the image
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Light shadow for depth
+        }
+      }
+  
+      .section-description {
+        font-family: Inter, sans-serif;
+        font-size: 17px;
+   
+        color: #333;
+        line-height: 1.6; // Better readability
+        margin-bottom: 10px;
+      }
+  
+      .section-content {
+        font-family: Inter, sans-serif;
+        font-size: 17px;
+       
+        color: #333;
+        line-height: 1.6;
+        margin: 15px 0;
+      }
+    }
+  }
+
+  .know-more-button {
+         
+    padding: 9px 19px;
+    background: linear-gradient(90deg, rgb(5, 17, 242) 0%, rgb(6, 21, 241) 30%, rgb(39, 136, 224) 63%, rgb(49, 173, 219) 87%, rgb(54, 187, 217) 100%);
+    color: #fff; // Button text color
+    text-decoration: none; // Remove underline
+    border-radius: 30px; // Rounded corners
+    transition: background-color 0.3s;
+    font-size: 13px;
+    gap: 10px;
+  
+    .know-more-button i {
+      margin-left: 10px; /* Adjust gap between text and icon */
+    }
+    
+    /* Optional: Add some padding for better button appearance */
+    .know-more-button {
+      padding: 8px 12px; /* Add padding around the button */
+      border: 1px solid #007bff; /* Border for visibility */
+      border-radius: 4px; /* Rounded corners */
+      transition: background-color 0.3s; /* Smooth background transition */
+    }
+    
+    .know-more-button:hover {
+      background-color: #e7f0ff; /* Change background on hover */
+    }
+   
+    
+    &:hover {
+      background-color: #0056b3; // Darker shade on hover
+    }
+  }
+  
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column; // Stack items on smaller screens
+      align-items: center; // Center items
+      .section-image {
+        margin-top: 20px; // Add space above the image
+      }
+    }
+  
+    .section-title {
+      font-size: 28px;
+    }
+  
+    .section-description,
+    .section-content {
+      font-size: 16px;
+    }
+  }
+  

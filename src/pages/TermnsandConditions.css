@@ -1,0 +1,23 @@
+.terms-container {
+    padding: 150px 60px;
+   
+   
+    font-family: 'Roboto', sans-serif; /* or your chosen font */
+    text-align: justify;
+}
+
+h2 {
+    color: #007bff;
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    margin: 10px 0;
+}

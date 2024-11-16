@@ -1,0 +1,40 @@
+@import "../../main.scss";
+
+@keyframes blink {
+  0% {
+    background-color: #25d366;
+  }
+  50% {
+    background-color: #34eb77;
+  }
+  100% {
+    background-color: #25d366;
+  }
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  animation: blink 1s infinite;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  svg {
+    color: white;
+    font-size: 2rem;
+  }
+}

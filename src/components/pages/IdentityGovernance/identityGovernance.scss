@@ -1,0 +1,79 @@
+// identityGovernance.scss
+
+.identity-governance-section {
+    padding: 60px 20px;
+    background-color: #f4f9ff; // Light background
+  
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+  
+      .section-title {
+        font-size: 36px;
+        font-weight: bold;
+        color: #0e30ed; // Primary color
+        margin-bottom: 40px;
+        text-align: center;
+      }
+  
+      .cards-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; // Space between cards
+  
+        .card {
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
+          width: calc(50% - 10px); // Two cards per row, with spacing
+          display: flex;
+          flex-direction: column; // Stack image and text
+  
+          .card-image {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+          }
+  
+          .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            padding: 15px;
+            text-align: center;
+          }
+  
+          .card-content {
+            font-size: 16px;
+            color: #555;
+            padding: 0 15px 15px; // Add padding to the content
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .cards-wrapper {
+      .card {
+        width: 100%; // Stack cards on smaller screens
+      }
+    }
+  
+    .section-title {
+      font-size: 28px;
+    }
+  
+    .card-title {
+      font-size: 18px;
+    }
+  
+    .card-content {
+      font-size: 15px;
+    }
+  }
+  
